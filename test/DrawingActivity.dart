@@ -1047,26 +1047,26 @@ class _DrawingactivityState extends State<Drawingactivity> {
   }
 }
 
-// class DrawingPainter extends CustomPainter {
-//   final List<List<Offset>> strokes;
-//   DrawingPainter(this.strokes);
+class DrawingPainter extends CustomPainter {
+  final List<List<Offset>> strokes;
+  DrawingPainter(this.strokes);
 
-//   @override
-//   void paint(Canvas canvas, Size size) {
-//     final paint = Paint()
-//       ..color = Colors.black
-//       ..strokeWidth = 3.0
-//       ..strokeCap = StrokeCap.round;
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = Paint()
+      ..color = Colors.black
+      ..strokeWidth = 3.0
+      ..strokeCap = StrokeCap.round;
 
-//     for (var stroke in strokes) {
-//       for (int i = 0; i < stroke.length - 1; i++) {
-//         if (stroke[i] != Offset.infinite && stroke[i + 1] != Offset.infinite) {
-//           canvas.drawLine(stroke[i], stroke[i + 1], paint);
-//         }
-//       }
-//     }
-//   }
+    for (var stroke in strokes) {
+      for (int i = 0; i < stroke.length - 1; i++) {
+        if (stroke[i] != Offset.infinite && stroke[i + 1] != Offset.infinite) {
+          canvas.drawLine(stroke[i], stroke[i + 1], paint);
+        }
+      }
+    }
+  }
 
-//   @override
-//   bool shouldRepaint(DrawingPainter oldDelegate) => true;
-// }
+  @override
+  bool shouldRepaint(DrawingPainter oldDelegate) => true;
+}
