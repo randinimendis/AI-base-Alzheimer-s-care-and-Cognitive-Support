@@ -1010,42 +1010,42 @@ class _DrawingactivityState extends State<Drawingactivity> {
     );
   }
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(title: Text('🎨 Drawing Challenge')),
-//       body: Column(
-//         children: [
-//           const SizedBox(height: 12),
-//           Text('Draw: $challengeLabel',
-//               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-//           Text('Score: $score',
-//               style: TextStyle(fontSize: 18, color: Colors.green)),
-//           const SizedBox(height: 12),
-//           Container(
-//             color: Colors.grey[200],
-//             width: MediaQuery.of(context).size.width,
-//             height: MediaQuery.of(context).size.height / 2,
-//             child: GestureDetector(
-//               onPanUpdate: onPanUpdate,
-//               onPanEnd: onPanEnd,
-//               child: CustomPaint(
-//                 painter: DrawingPainter(strokes),
-//               ),
-//             ),
-//           ),
-//           const SizedBox(height: 16),
-//           ElevatedButton(onPressed: predictDrawing, child: Text('Predict')),
-//           const SizedBox(height: 8),
-//           ElevatedButton(onPressed: clearCanvas, child: Text('Clear')),
-//           const SizedBox(height: 16),
-//           Text(prediction,
-//               style: TextStyle(fontSize: 18), textAlign: TextAlign.center),
-//         ],
-//       ),
-//     );
-//   }
-// }
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('🎨 Drawing Challenge')),
+      body: Column(
+        children: [
+          const SizedBox(height: 12),
+          Text('Draw: $challengeLabel',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+          Text('Score: $score',
+              style: TextStyle(fontSize: 18, color: Colors.green)),
+          const SizedBox(height: 12),
+          Container(
+            color: Colors.grey[200],
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height / 2,
+            child: GestureDetector(
+              onPanUpdate: onPanUpdate,
+              onPanEnd: onPanEnd,
+              child: CustomPaint(
+                painter: DrawingPainter(strokes),
+              ),
+            ),
+          ),
+          const SizedBox(height: 16),
+          ElevatedButton(onPressed: predictDrawing, child: Text('Predict')),
+          const SizedBox(height: 8),
+          ElevatedButton(onPressed: clearCanvas, child: Text('Clear')),
+          const SizedBox(height: 16),
+          Text(prediction,
+              style: TextStyle(fontSize: 18), textAlign: TextAlign.center),
+        ],
+      ),
+    );
+  }
+}
 
 // class DrawingPainter extends CustomPainter {
 //   final List<List<Offset>> strokes;
