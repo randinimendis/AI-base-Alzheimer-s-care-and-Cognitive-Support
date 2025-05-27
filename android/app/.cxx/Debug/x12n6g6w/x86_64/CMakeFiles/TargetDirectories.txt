@@ -1,0 +1,2 @@
+C:/Users/Bawantha Wijekoon/AndroidStudioProjects/medication/android/app/.cxx/Debug/x12n6g6w/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/Bawantha Wijekoon/AndroidStudioProjects/medication/android/app/.cxx/Debug/x12n6g6w/x86_64/CMakeFiles/rebuild_cache.dir

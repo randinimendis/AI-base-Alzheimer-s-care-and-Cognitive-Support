@@ -1,8 +1,8 @@
-name: app
+name: medication
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: "none" # Remove this line if you wish to publish to pub.dev
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -19,7 +19,7 @@ publish_to: "none" # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.5.4
+  sdk: ^3.6.2
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -34,24 +34,34 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
-  google_fonts: ^6.2.1
-  flutter_drawing_board: ^0.9.5
-  #  image: ^4.5.3
-  #  tflite_flutter: ^0.9.0
+  flutter_tts: ^4.2.2
+  flutter_spinkit: ^5.2.1
+  tflite_v2: ^1.0.0
+  get: ^4.7.2
+  camera: ^0.11.1
+  permission_handler: ^11.4.0
+  smart_popup: ^3.0.4
+  path_provider: ^2.1.5
+  contained_tab_bar_view: ^0.8.0
+  url_launcher: ^6.3.1
   http: ^1.3.0
-  dio: ^5.8.0+1
-  image_picker: ^1.1.2
-  image: ^4.5.3
-  webview_flutter: ^4.10.0
-  webview_flutter_android: ^4.3.2
-  flutter_inappwebview: ^6.1.5
-  tflite_flutter: ^0.11.0
+  flutter_sound: ^9.1.7
+  percent_indicator: ^4.2.2
+  firebase_core: ^3.13.1
+  firebase_auth: ^5.5.4
+  provider: ^6.1.5
+  cloud_firestore: ^5.6.8
+  flutter_native_splash: ^2.4.6
+  flutter_signin_button: ^2.0.0
+  flutter_firebase_chat_core: ^1.6.8
+  flutter_chat_ui: ^1.4.1
+  flutter_chat_types: ^3.0.4
+  youtube_player_iframe: ^5.2.1
+  intl: ^0.20.2
+  alarm: ^5.1.3
   shared_preferences: ^2.5.3
-  speech_to_text: ^7.0.0
-  fl_chart: ^0.70.0
-  syncfusion_flutter_charts: ^29.1.38
-#  image: ^3.3.0
-#  tflite_flutter: ^0.9.1
+  flutter_randomcolor: ^1.0.18
+  flutter_launcher_icons: ^0.14.3
 
 dev_dependencies:
   flutter_test:
@@ -62,13 +72,14 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^4.0.0
+  flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -76,8 +87,9 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/models/model.tflite
-  #   - images/a_dot_ham.jpeg
+    - assets/images/
+    - assets/faceRec/
+    - assets/medicine/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -104,3 +116,29 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/splash_screen.png
+  branding: assets/images/splash_screen.png
+  color_dark: "#121212"
+  image_dark: assets/images/splash_screen.png
+  branding_dark: assets/images/splash_screen.png
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/images/logo.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/images/logo.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/images/logo.png"

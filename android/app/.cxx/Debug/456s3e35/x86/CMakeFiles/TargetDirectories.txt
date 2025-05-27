@@ -1,0 +1,2 @@
+/Users/madhusanka/Downloads/MindCare-master/android/app/.cxx/Debug/456s3e35/x86/CMakeFiles/edit_cache.dir
+/Users/madhusanka/Downloads/MindCare-master/android/app/.cxx/Debug/456s3e35/x86/CMakeFiles/rebuild_cache.dir
