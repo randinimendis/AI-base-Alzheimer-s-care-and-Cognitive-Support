@@ -14,8 +14,8 @@ Future<void> main() async {
   await Alarm.init();
   await Firebase.initializeApp(
     options: FirebaseOptions(
-        apiKey: "AIzaSyDoZrO3W42wTDckMLt_bJkbIT1hz-uZmac",
-        appId: "1:431207410325:android:223be93cb56dc362c1499c",
+        // apiKey: "AIzaSyDoZrO3W42wTDckMLt_bJkbIT1hz-uZmac",
+        // appId: "1:431207410325:android:223be93cb56dc362c1499c",
         messagingSenderId: "431207410325",
         projectId: "medication-f765c")
   );
